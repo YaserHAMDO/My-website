@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yaser Hamdo - Personal Developer Page</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,6 +26,12 @@
         section {
             margin: 20px;
         }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
         .btn {
             background-color: #4CAF50;
             color: white;
@@ -34,6 +42,13 @@
             font-size: 16px;
             margin-top: 10px;
             display: inline-block;
+            vertical-align: middle;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .btn i {
+            margin-right: 8px;
         }
         footer {
             margin-top: 20px;
@@ -53,8 +68,21 @@
         .social-links a {
             margin: 0 10px;
             text-decoration: none;
-            color: #4CAF50;
+            color: white;
             font-size: 18px;
+            display: inline-block;
+        }
+        .github {
+            background-color: #333;
+        }
+        .linkedin {
+            background-color: #0077B5;
+        }
+        .google-play {
+            background-color: #34A853;
+        }
+        .upwork {
+            background-color: #6fda44;
         }
     </style>
 </head>
@@ -64,6 +92,9 @@
     </header>
 
     <section>
+        <!-- Add Image Here -->
+        <img src="cv2.png" alt="Yaser Hamdo" class="profile-img">
+        
         <div class="contact-info">
             <p><strong>Phone:</strong> 0551 955 75 06</p>
             <p><strong>Email:</strong> <a href="mailto:yaserhamdo95@gmail.com">yaserhamdo95@gmail.com</a></p>
@@ -71,10 +102,10 @@
         </div>
 
         <div class="social-links">
-            <a href="https://github.com/YaserHAMDO" class="btn">GitHub</a>
-            <a href="https://www.linkedin.com/in/yaser-hamdo/" class="btn">LinkedIn</a>
-            <a href="https://play.google.com/store/apps/developer?id=Ulubey+Domestic+and+International+Trade+Co." class="btn">Google Play Store</a>
-            <a href="https://www.upwork.com/freelancers/~01f7a9e6e24e16d2f5" class="btn">Upwork</a>
+            <a href="https://github.com/YaserHAMDO" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/yaser-hamdo" class="btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://play.google.com/store/apps/developer?id=Ulubey+Domestic+and+International+Trade+Co." class="btn google-play"><i class="fab fa-google-play"></i> Google Play Store</a>
+            <a href="https://www.upwork.com/freelancers/~0114e813b180a627c5?mp_source=share" class="btn upwork"><i class="fa-upwork"></i> Upwork</a>
         </div>
     </section>
 
