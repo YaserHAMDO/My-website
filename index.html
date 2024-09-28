@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yaser Hamdo - Personal Developer Page</title>
+    <title>Yaser Hamdo - Personal Page</title>
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -14,6 +14,9 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #333;
@@ -25,12 +28,25 @@
         }
         section {
             margin: 20px;
+            flex-grow: 1;
         }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             margin-top: 20px;
+        }
+        .name-job-title {
+            margin: 10px 0;
+        }
+        .name-job-title h2 {
+            margin: 5px 0;
+            font-size: 24px;
+        }
+        .name-job-title p {
+            margin: 0;
+            font-size: 18px;
+            color: #555;
         }
         .btn {
             background-color: #4CAF50;
@@ -50,9 +66,18 @@
         .btn i {
             margin-right: 8px;
         }
+        .about-me {
+            margin: 20px 0 30px 0;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            max-width: 800px;
+        }
         footer {
-            margin-top: 20px;
+            margin-top: auto;
             color: #333;
+            padding-bottom: 20px;
         }
         .contact-info {
             text-align: left;
@@ -63,7 +88,7 @@
             margin: 5px 0;
         }
         .social-links {
-            margin-top: 10px;
+            margin-top: 20px;
         }
         .social-links a {
             margin: 0 10px;
@@ -88,13 +113,27 @@
 </head>
 <body>
     <header>
-        <h1>Yaser Hamdo - Computer Engineer</h1>
+        <h1>Personal Page</h1>
     </header>
 
     <section>
-        <!-- Add Image Here -->
         <img src="cv2.png" alt="Yaser Hamdo" class="profile-img">
         
+        <div class="name-job-title">
+            <h2>Yaser Hamdo</h2>
+            <p>Senior Android Developer</p>
+        </div>
+        
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Engineer currently pursuing a Master's degree at Ege University, with three years of hands-on experience in Android app development. I specialize in creating robust, scalable, and user-friendly native Android apps using Android Studio, with a strong command of Java, XML, and Kotlin. My work on the Sniffer app, which has over 10k downloads on Google Play, demonstrates my ability to integrate advanced features like Firebase for real-time data management, AWS for backend services, and Google Cloud for seamless performance.
+            </p>
+            <p>
+                My expertise extends to embedded systems, game development with Unity, and AI technologies. With a focus on problem-solving and adopting new technologies, I bring a comprehensive approach to building high-quality mobile applications that meet the highest standards.
+            </p>
+        </div>
+
         <div class="contact-info">
             <p><strong>Phone:</strong> 0551 955 75 06</p>
             <p><strong>Email:</strong> <a href="mailto:yaserhamdo95@gmail.com">yaserhamdo95@gmail.com</a></p>
